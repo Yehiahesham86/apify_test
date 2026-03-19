@@ -1,5 +1,5 @@
 apify>=2.0.0
-email-scraper
+apify-client
 fastapi
 uvicorn
 httpx
@@ -13,4 +13,9 @@ phonenumbers
 regex
 pymongo
 email-validator
-apify-client
+email-scraper
+stealth_requests
+scrapy
+scrapy-xlsx
+openai
+requests
