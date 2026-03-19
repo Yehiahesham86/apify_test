@@ -1,0 +1,15 @@
+apify>=2.0.0
+fastapi
+uvicorn
+httpx
+beautifulsoup4
+parsel
+html2text
+curl_cffi
+patchright
+tldextract
+phonenumbers
+regex
+pymongo
+email-validator
+apify-client

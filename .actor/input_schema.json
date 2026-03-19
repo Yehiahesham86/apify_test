@@ -1,0 +1,43 @@
+{
+    "title": "Contact Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "urls": {
+            "title": "URLs or Domains",
+            "type": "array",
+            "description": "List of website URLs or domain names to scrape contact info from.",
+            "editor": "stringList",
+            "example": ["https://example.com", "another-company.com"]
+        },
+        "emailLimit": {
+            "title": "Max Emails per Domain",
+            "type": "integer",
+            "description": "Maximum number of emails to return per domain.",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 100
+        },
+        "phoneLimit": {
+            "title": "Max Phones per Domain",
+            "type": "integer",
+            "description": "Maximum number of phone numbers to return per domain.",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 100
+        },
+        "filterPersonalEmails": {
+            "title": "Filter Personal Emails",
+            "type": "boolean",
+            "description": "If true, excludes emails from Gmail, Yahoo, Hotmail, etc.",
+            "default": false
+        },
+        "realtime": {
+            "title": "Realtime Mode",
+            "type": "boolean",
+            "description": "If true, skips SkyMem lookup and scrapes directly from the website.",
+            "default": false
+        }
+    },
+    "required": ["urls"]
+}
